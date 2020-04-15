@@ -2,4 +2,4 @@
 <h1> <%=@doctor.department%> </h1>
 
 <% @doctor.appointments.each do |a| %>
-  <p> Date: <%= appointment_datetime.</p>
+  <p> Date: <%= appointment_datetime.strftime("%B %d, %Y at %k:%M") %></p>
